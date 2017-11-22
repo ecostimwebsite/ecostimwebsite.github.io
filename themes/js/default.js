@@ -68,29 +68,7 @@ $(this).css('background-color','#ffffff');
 
 
 $(function(){	
-	$('#mainCarousel').carousel('cycle');
-
-	$('#BlogFeed').FeedEk({
-		Type:'Blog',
-		Title : 'Latest Articles',
-		FeedUrl : 'http://blog.anujkumar.com/rss', //Provide link to your blog rss feed here
-		SourceUrl : 'http://blog.anujkumar.com', //Provide link to your blog here
-		MaxCount : 3, //Maximum number of posts to diaplay
-		ShowDesc : true,
-		ShowPubDate: true,
-		FooterText:'Visit our blog' //text to display in footer link
-	});
-	$('#TwitterFeed').FeedEk({
-		Type:'Tweets',
-		Title : 'Recent Tweets',
-		FeedUrl : 'https://api.twitter.com/1/statuses/user_timeline.rss?screen_name=anujkkk', //replace anujkkk with your twitter username
-		SourceUrl : 'http://www.twitter.com/anujkkk', //replace anujkkk with your twitter username
-		MaxCount : 3, //maximum number of tweets to display
-		ShowDesc : true,
-		ShowPubDate: true,
-		FooterText:'Follow us @anujkkk' //text to display in footer link
-	});
-	
+	$('#mainCarousel').carousel('cycle');	
 	
 	$('#btnNew').click(function(e) {
 		$('.all').quicksand( $('.mgmt li'), {
